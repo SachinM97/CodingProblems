@@ -14,5 +14,6 @@
 
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
+        # bin() --> This returns result starting with 0b, that is why we need to do [2:]
         sum = bin(int(a, 2) + int(b, 2))
-        return sum[2:]
+        return sum[2:]   
